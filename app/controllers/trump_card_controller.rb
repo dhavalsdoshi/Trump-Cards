@@ -5,7 +5,6 @@ class TrumpCardController < ApplicationController
   end
 
   def index
-
   end
   
   def play
@@ -34,7 +33,5 @@ class TrumpCardController < ApplicationController
   def create_deck_of(csv_name)
     Deck.new(DataSource.new("#{RAILS_ROOT}/config/data/#{csv_name}.csv"))    
   end
-
-
 
 end
