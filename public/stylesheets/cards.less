@@ -1,12 +1,19 @@
+@import "bootstrap.less";
 #CardsContainer{
     position:relative;
 }
 
 .card{
-    width: 314px;
-    height: 442px;
-    background: url("/images/cards.png") no-repeat;
+    width:250px;
+    height:350px;
+    background-color: #CCC;
+    .box-shadow(5px 9px 15px #888);
     padding:1px 0 0 0;
+    border : 1px solid #333;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 .cardHeader{
@@ -21,5 +28,10 @@
 
 #RightCard{
     position:relative;
-    left:30px;
+    left:70%;
+}
+
+#LeftCard{
+    position:relative;
+    left:10%;
 }
