@@ -4,8 +4,6 @@
 }
 
 .card{
-    width:250px;
-    height:350px;
     background-color: #CCC;
     .box-shadow(5px 9px 15px #888);
     padding:1px 0 0 0;
@@ -14,24 +12,33 @@
     -moz-border-radius: 7px;
     margin-left: 5px;
     margin-top: 5px;
+    position:relative;
+    &.right{
+        left:70%;
+        background:url("/images/card-background.jpg");
+        background-size:30%;
+        width:100px;
+        height:160px;
+    }
+    &.left{
+        left:40%;
+        width:300px;
+        height:500px;
+    }
+    img{
+        margin:0 0 0 50px;
+    }
 }
 
 .cardHeader{
     font-weight:bold;
     font-size:1.2em;
-    margin: 50px 5px 30px 20px;
+    margin: 30px 40px;
 }
 
 .cardProperties{
     margin: 5px 5px 5px 20px;
-}
-
-#RightCard{
-    position:relative;
-    left:70%;
-}
-
-#LeftCard{
-    position:relative;
-    left:10%;
+    .cardProperty{
+        padding:5px;
+    }
 }

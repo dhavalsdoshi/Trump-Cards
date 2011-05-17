@@ -4,20 +4,11 @@
 </head>
 <body>
 <div id="CardsContainer" class="cardContainer">
-  <div id="RightCard" class="card">
-    <div class="cardHeader"><%= @card1.name %></div>
-    <div class="cardProperties">
-    <% @property_names.each do |property_name| %>
-        <div class="cardProperty">
-          <%= link_to property_name, :action => 'result', :game => @game,
-            :name => @card1.name, :other_name => @card2.name,
-            :property => property_name.to_s %>
-         </div>
-    <% end %>
-    </div>
+  <div id="RightCard" class="right card">
   </div>
-  <div id="LeftCard" class="card right">
+  <div id="LeftCard" class="left card">
     <div class="cardHeader"><%= @card2.name %></div>
+    <img src="/images/fedex.jpg" alt="player">
     <div class="cardProperties">
     <% @property_names.each do |property_name| %>
         <div class="cardProperty">
